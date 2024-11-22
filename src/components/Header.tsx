@@ -19,7 +19,7 @@ type TimeDisplayProps = {
     locale?: string;  // Optionally allow locale, defaulting to 'en-GB'
 };
 
-const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = 'en-GB' }) => {
+const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = 'en-US' }) => {
     const [currentTime, setCurrentTime] = useState('');
 
     useEffect(() => {
